@@ -7,19 +7,17 @@ function count() {
                 document.getElementById("").innerHTML = text;
             }
 
-var myList = new Array(-4,11,8,18,13,13,5,-7,-7,14,-4); 
-            
-            function countEvens(list) {
-                var evens = [];
-                for (var i = 0; i < list.length; i++) {
-                    if (list[i] % 2 == 0) {
-                        evens.push(list[i]);
-                    }
-                }
-                return evens.length;
-            }
-             
-            document.getElementById("").innerHTML = countEvens(myList);
+function countEvens(list) {
+	var myList = new Array(-4,11,8,18,13,13,5,-7,-7,14,-4);
+	var evens = [];
+	for (var i = 0; i < list.length; i++) {
+		if (list[i] % 2 == 0) {
+			evens.push(list[i]);
+		}
+    }
+	return evens.length;
+	document.getElementById("").innerHTML = countEvens(myList);
+}
 
 function yearOfSchool() {
             var name = document.getElementById("studentsName").value;
