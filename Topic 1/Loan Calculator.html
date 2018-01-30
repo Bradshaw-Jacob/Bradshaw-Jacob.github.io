@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<HTML lang="en-us">
+    <head>
+        <title>Loan Calculator</title>
+        <meta charset="utf-8">
+        <script>
+            function doPayment() {
+                var principal = parseFloat(document.getElementById("userPrincipal").value);
+                var annualRate = parseFloat(document.getElementById("userAnnualRate").value);
+                var year = parseFloat(document.getElementById("userYears").value);
+                var periodsPerYear = parseFloat(document.getElementById("userPeriods").value);
+                var numberOfPaymentsPaidToDate = parseFloat(document.getElementById("userNumberOfPaymentsPaidToDate").value);
+                var payment = Math.round(computePayment(principal, annualRate, year, periodsPerYear));
+                document.getElementById("monthlyPayment").innerHTML = payment;
+            }
+            function doBalance() {
+                var principal = parseFloat(document.getElementById("userPrincipal").value);
+                var annualRate = parseFloat(document.getElementById("userAnnualRate").value);
+                var year = parseFloat(document.getElementById("userYears").value);
+                var periodsPerYear = parseFloat(document.getElementById("userPeriods").value);
+                var numberOfPaymentsPaidToDate = parseFloat(document.getElementById("userNumberOfPaymentsPaidToDate").value);
+                var balance = computeBalance(principal, annualRate, year, periodsPerYear, numberOfPaymentsPaidToDate);
+                document.getElementById("currentBalance").innerHTML = balance;
+            }
+            function computePayment(a, b, c, d) {
+                var r = b / d;
+                var n = c * d;
+                var p = (a * r) / (1 - Math.pow((1+r), -n));
+                return p;
+            }
+            function computeBalance(a, b, c, d, e) {
+                var r = b / d;
+                var n = c * d;
+                var p = (a * r) / (1 - Math.pow((1+r), -n));
+                var b = (a * Math.pow((1+r), e)) - (p * ((Math.pow((1+r), e)) - 1)) / r;
+                return b;
+            }
+            function reset() {
+                document.getElementById("form").reset();
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Loan Calculator</h2>
+        <form id="form">
+            Amount Borrowed: <input type="text" id="userPrincipal"><br>
+            Anual Interest Rate: <input type="text" id="userAnnualRate"><br>
+            Number of years: <input type="text" id="userYears"><br>
+            Periods per year: <input type="text" id="userPeriods"><br>
+            
+            <button type="button" onclick="doPayment()">Compute Payment</button>
+            
+            <div id="monthlyPayment"></div><br>
+            
+            Number of payments paid to date: <input type="text" id="userNumberOfPaymentsPaidToDate"><br>
+            
+            <button type="button" onclick="doBalance()">Compute Balance</button>
+            
+            <div id="currentBalance"></div><br>
+        </form>
+        <button type="button" onclick="reset()">Reset</button>
+    </body>
+</HTML>

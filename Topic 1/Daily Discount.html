@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<HTML lang="en-us">
+    <head>
+        <title>Template</title>
+        <meta charset="utf-8">
+        <script>
+            /*Input shoppers subtotal
+             *Process: calculate what day it is and give discount if applicable then add sales tax
+             *output: total.
+             */
+            function dailyDiscount() {
+                var dayOfWeek = new Date().getDay();
+                var subtotal = parseFloat(document.getElementById("userSubtotal").value);
+                var discount;
+                var tax;
+                var total;
+                
+                if (subtotal > 50 && (dayOfWeek == 2 || dayOfWeek == 3)) {
+                    discount = subtotal * 0.1;
+                    tax = (subtotal - discount) * 0.06;
+                    total = subtotal - discount + tax;
+                }
+                else {
+                    tax = subtotal * 0.06;
+                    total = subtotal + tax;
+                }
+                document.getElementById("grandTotal").innerHTML = total;
+            }
+        </script>
+    </head>
+    <body>
+        <p>Please enter the subtotal:</p>
+        <input type="text" id="userSubtotal">
+        <button type="button" onclick="dailyDiscount()">Calculate Discount</button>
+        <p>Your total is:</p>
+        <div id="grandTotal"></div>
+    </body>
+</HTML>

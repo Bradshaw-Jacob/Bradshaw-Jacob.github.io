@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<HTML lang="en-us">
+    <head>
+        <title>Template</title>
+        <meta charset="utf-8">
+        <script>
+        /*Input name and credits
+         *Process: what year of school the student is in.
+         *Output: students name and year in college
+         */
+        function yearOfSchool() {
+            var name = document.getElementById("studentsName").value;
+            var credits = parseFloat(document.getElementById("creditNumber").value);
+            var message;
+            
+            if (0 <= credits && credits < 30) {
+                message = name + ", you are a freshman";
+            } 
+            else if (30 <= credits && credits < 60) {
+                message = name + ", you are a sophomore";
+            }
+            else if (60 <= credits && credits < 90) {
+                message = name + ", you are a junior";
+            }
+            else if (90 <= credits) {
+                message = name + ", you are a senior";
+            }
+            else {
+                message = name + "Please enter a valid number of credits.";
+            }
+            document.getElementById("messageOutput").innerHTML = message;
+        }
+        </script>
+    </head>
+    <body>
+        <p>Your Name:</p>
+        <input type="text" id="studentsName">
+        <p>Please enter the number of credits completed:</p>
+        <input type="text" id="creditNumber">
+        <button type="button" onclick="yearOfSchool()">School Year</button>
+        <div id="messageOutput"></div>
+    </body>
+</HTML>

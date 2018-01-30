@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<HTML lang="en-us">
+    <head>
+        <title>Counting Evens Array</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h2>Array Functions</h2>
+<!--        <button type="button" onclick="getMiddle(myList)">Add Ends</button>-->
+        All even numbers in the array:<div id="outputDiv"></div><br>
+        <script>
+            var myList = new Array(-4,11,8,18,13,13,5,-7,-7,14,-4); 
+            
+            function countEvens(list) {
+                var evens = [];
+                for (var i = 0; i < list.length; i++) {
+                    if (list[i] % 2 == 0) {
+                        evens.push(list[i]);
+                    }
+                }
+                return evens.length;
+            }
+             
+            document.getElementById("outputDiv").innerHTML = countEvens(myList);
+            
+        </script>
+        
+    </body>
+</HTML>
