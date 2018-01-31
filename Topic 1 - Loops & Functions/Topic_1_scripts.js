@@ -1,22 +1,21 @@
 function count() {
-                var i;
-                var text = "";
-                for (i = 0; i <= 9; i += 3) {
-                    text += "The number is " + i + "<br>";
-                 }
-                document.getElementById("").innerHTML = text;
-            }
+	var i;
+	var text = "";
+	for (i = 0; i <= 9; i += 3) {
+		text += "The number is " + i + "<br>";
+	}
+	document.getElementById("counterOutput").innerHTML = text;
+}
 
-function countEvens(list) {
-	var myList = new Array(-4,11,8,18,13,13,5,-7,-7,14,-4);
+function countEvens() {
+	var list = new Array(-4,11,8,18,13,13,5,-7,-7,14,-4);
 	var evens = [];
 	for (var i = 0; i < list.length; i++) {
 		if (list[i] % 2 == 0) {
 			evens.push(list[i]);
 		}
-    }
-	return evens.length;
-	document.getElementById("").innerHTML = countEvens(myList);
+	}
+	document.getElementById("evensDiv").innerHTML = evens;
 }
 
 function yearOfSchool() {
