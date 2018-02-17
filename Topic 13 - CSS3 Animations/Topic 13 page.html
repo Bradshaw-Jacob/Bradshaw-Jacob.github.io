@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Topic 13 - Designing, Defining, and Triggering CSS3 Animations without Custom Libraries</title>
+		<link rel="stylesheet" type="text/css" href="Page 13 styles.css">
+		<script type="text/javascript" src="Page_13_scripts.js"></script>
+	</head>
+	<body>
+
+		<p><a href="../index.html">Return to Table of Contents</a></p>
+		<h1 id="title">CSS3 Animations</h1>
+		<h4>Here are some animations using CSS. You can use these types of animations without using any Javascript. You most likely saw how the title of this page moved back and forth once the page was loaded.</h4>
+		<p>Here is my teaching session: <a href="">CSS3 Animations</a></p>
+
+
+
+		<div class="testingBlock">
+			<p>The animations are made up of 2 main components. The CSS definition and the keyframes. In the definition you add many different properties. Some of these properties control the duration of the animation, or the delay before the animation starts. There are many properties that you can use.</p>
+
+			<p>Here is what the title animation looks like.</p>
+			<pre>#title {
+	animation-name: moveTitle;
+	overflow: hidden;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@keyframes moveTitle {
+	0% {margin-left: 0%;}
+	50% {margin-left: 65%;}
+	100% {margin-left: 0%;}
+}</pre>
+		</div><br>
+
+		<div class="testingBlock2">
+			<p>Here is an animation that bring a little JavaScript. This uses the structure as you would find in the example above. Here is a mic falling.</p>
+			<button type="button" onclick="listener()">Drop</button>
+			<!--<button type="button" onclick="playAudio()">Test</button>-->
+			<div ><img id="microphone" src="micDrop.jpg" alt="Microphone" ></div>
+			<audio id="Drop_SFX">
+				<source src="./Microphone Drop_SFX.mp3" type="audio/mp3" preload="auto">
+			</audio>
+		</div>
+
+	</body>
+
+</html>

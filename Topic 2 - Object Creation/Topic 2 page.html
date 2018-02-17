@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topic 2 - Object Creation Functions, Properties, Methods, Instantiation</title>
+	<link rel="stylesheet" type="text/css" href="Page_2.css">
+	<script type="text/javascript" src="Topic_2_scripts.js"></script>
+</head>
+<body>
+	<p><a href="../index.html">Return to Table of Contents</a></p>
+	<h1>Object Creation Functions, Properties, Methods, Instantiation</h1>
+	<p>Here is my teaching session: <a href="https://www.youtube.com/watch?v=rktorH59gsQ&feature=youtu.be">Objects</a></p>
+
+	<h4>Topic 2 focused on object creation and their accompaning properties and methods. Objects have properties which you will see below. an objects properties can also be functions.</h4>
+
+	<div class="testingBlock">
+		<p>
+			Part 1 - Here are two ways to write a object creation function. This is what is know as object literal notation. The properties are made up of key:value pairs.
+		</p>
+		<pre>var car1 = {make:"Ford", model:"Mustang", firstYear:"1964"};</pre>
+		<pre>var car2 = {
+    make:"Dodge", 
+    model:"Charger", 
+    firstYear:"1966",
+    fullName: function() {return this.make + " " + this.model}
+};</pre>
+	</div><br>
+
+	<div class="testingBlock">
+		<p>Part 2 - This is an example of a constructor function. This provides a blue print for the Car object.</p>
+		<pre>function Car(make, model, year, color) {
+ 		this.make = make;
+  		this.model = model;
+  		this.year = year;
+  		this.color = color;
+}</pre><br>
+		<p>Part 3 - We would then be able to create an instance of the object by creating a variable and passing in the known attributes.</p>
+		<pre>var mycar = new Car('Eagle', 'Talon TSi', 1993);</pre>
+		
+		<button type="button" onclick="newInstance()">Show My Car</button>
+		<div id="car_Instance"></div><br>
+
+		<p>Part 4 - If you look above you can see that the blueprint has another property for color that we did not have.</p>
+		<p>Choose a color below and add it to the 'mycar' object.</p>
+
+		<form>
+			<input type="radio" name="color" value="Blue">Blue<br>
+			<input type="radio" name="color" value="Green">Green<br>
+			<input type="radio" name="color" value="Red">Red<br>
+			<input type="radio" name="color" value="Yellow">Yellow<br>
+		</form>
+
+		<p>Once you have selected your color add it to the 'mycar' object.</p>
+		<button type="button" onclick="addColor()">Add Color</button>
+	</div>
+
+
+
+
+
+
+</body>
+</html>

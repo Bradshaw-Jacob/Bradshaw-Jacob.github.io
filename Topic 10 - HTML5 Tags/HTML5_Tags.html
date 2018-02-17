@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topic 10 - HTML5 Tags - Video, Audio, and Canvas</title>
+	<link rel="stylesheet" type="text/css" href="All_Pages.css">
+	<script type="text/javascript" src="canvasScripts.js"></script>
+</head>
+<body>
+	<p><a href="../index.html">Return to Table of Contents</a></p>
+	<h1>HTML5 Tags - Video, Audio, and Canvas</h1>
+
+	<h4>We are here to cover the Video, Audio, and Canvas tags. These tags are relatively new and came out with HTML 5.</h4>
+	<p>Here is my teaching session: <a href="https://www.youtube.com/watch?v=DZRP6ti8nN4&feature=youtu.be">HTML5 Tags</a></p>
+
+
+
+	
+	<div class="testingBlock">
+		<h2>Video</h2>
+
+		<p>Here is a video element. To play a vidoe before HTML5 you would have needed to use a plug-in like flash. Now it is built in. Enjoy the waterfall.</p>
+
+		<video width="320" height="240" controls poster="waterdrop.png">
+			<source src="343291949.mp4" type="video/mp4">
+			The video tag is not supported in your browser.
+		</video>
+	</div><br>
+
+	<div class="testingBlock">
+		<h2>Audio</h2>
+
+		<p>Here is a audio element. The audio is the new like the video tag, and now allows you to play audio with out needing a plug-in.Enjoy the drips.</p>
+
+		<audio controls muted>
+			<source src="Water Drop-SoundBible.com-2039669379.mp3" type="audio/mpeg">
+		</audio>
+	</div><br>
+
+	<div class="testingBlock">
+		<h2>Canvas</h2>
+		<p>The canvas is very powerful and allows you to draw graphics. Teh canvas below is a place holder. You use JavaScript to actual draw the elements on the canvas. I have added a few small graphics but there are many more things that you can do with the canvas.</p>
+		<button type="button" onclick="drawLine()">Draw Line</button><button type="button" onclick="fill()">Fill</button><button type="button" onclick="circle()">Draw Circle</button><br>
+		<canvas id="lineCanvas" width="200" height="100" style="border: 1px solid #000000;"></canvas>
+	</div><br>
+</body>
+</html>
