@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON Parsing & Stringify</title>
+	<link rel="stylesheet" type="text/css" href="Topic 3 styles.css">
+	<script type="text/javascript" src="Topic 3 scripts.js"></script>
+</head>
+<body>
+	<p><a href="../index.html">Return to Table of Contents</a></p>
+
+	<h1>JSON Parsing & Stringify</h1>
+
+	<h4>Topic 3 was all about parsing and stringifying data. Both are JSON methods that are used to convert data. They are opposites of each other. </h4>
+
+
+	<div id="string" class="testingBlock">
+		<p>The stringify method is first. Stringify is used when sending data to a web server. The data has to been a string. You can also use stringify if you would like to display a string value in the browser.</p>
+		<p>In this example we will create a JSON object and store it in local storage to pretend that we sent it to a web server.</p>
+
+		<button type="button" onclick="stringifyMe()">Stringify</button>
+		<div id="confirm"></div>
+	</div><br>
+
+	<div id="parse" class="testingBlock">
+		<p>We will now look at the parse method. If you were to receive data from a web server that data would come as a string. You would then use parse to convert that data into a JSON object. In Topic 4 you will see this in more action. For this example we have an object that we stored as a string. We will parse that object and return the values in that object.</p>
+
+		<button type="button" onclick="parseMe()">Parse</button><br>
+		My Name:<span id="name"></span><br>
+		My Height:<span id="height"></span><br>
+		My Hobbies:<span id="hobbies"></span><br>
+
+	</div><br>
+</body>
+</html>

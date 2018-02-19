@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Topic 5 - Local Storage</title>
+	<link rel="stylesheet" type="text/css" href="All_Pages.css">
+	<script type="text/javascript" src="Topic 5 scripts.js"></script>
+</head>
+<body onload="getName()">
+	<p><a href="../index.html">Return to Table of Contents</a></p>
+	<h1>Local Storage Storing and Retrieving Arrays, Associative Arrays, and Objects
+	</h1>
+
+	<h4>Topic 5 deals with local storage. Before HTML5 web pages had to use cookies to store information. With HTML 5 you can now use the local storage and session storage. These both allow you to store a lot more data then cookies ever could.</h4>
+
+	<div id="local" class="testingBlock">
+		<p>The local storage does not have an expiration date and will continue to hold the data until the storage is cleared.</p>
+		<p>Below you can enter your name. Your name will be stored in the local storage. I have also included a clear all button.</p>
+
+		<input type="text" id="firstName">
+		<button type="button" onclick="storeLocal()">Store Name</button>
+		<button type="button" onclick="clearAll()">Clear Storage</button>
+		<div id="localOutput"></div>
+	</div><br>
+
+
+
+
+</body>
+</html>
