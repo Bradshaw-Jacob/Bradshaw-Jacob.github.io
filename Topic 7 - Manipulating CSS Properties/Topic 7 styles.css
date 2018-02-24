@@ -1,0 +1,39 @@
+.testingBlock {
+	width: 500px;
+	height: 200px;
+	margin: auto;
+	border: 3px solid #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+}
+
+.rainbow {
+	width: 500px;
+	height: 200px;
+	margin: auto;
+	border: 3px solid #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+/*	background-color: #14C2CC*/
+	background-image: 
+		radial-gradient(circle farthest-side at top right, transparent, #ff5f9a),
+		radial-gradient(circle farthest-side at 50%, transparent, #ff0f17), 
+		radial-gradient(circle farthest-corner at 0% 100%, transparent, #0f1fff);
+	animation-name: rainbowShift;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rainbowShift {
+	0% 100%{filter: hue-rotate(0deg);}
+	25% {filter: hue-rotate(-45deg);}
+	50% {filter: hue-rotate(-90deg);}
+	75% {filter: hue-rotate(-45deg);}
+}
+
+/*
+#ff5f9a
+#2626f7
+*/
