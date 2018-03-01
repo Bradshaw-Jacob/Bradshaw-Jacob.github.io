@@ -26,8 +26,17 @@ function revertClass() {
 }
 
 
-
-
-function changeStyleSheet() {
-
+function changeStyleSheet(sheet) {
+	document.getElementById('styles').setAttribute('href', sheet);
 }
+
+/*function changeStyleSheet(theme) {
+	switch (theme) {
+		case 'default' :
+			document.getElementById('default').removeAttribute('disabled');
+			document.getElementById('second').setAttribute('disabled', true);
+		case 'second' :
+			document.getElementById('default').setAttribute('disabled', true);
+			document.getElementById('second').removeAttribute('disabled');
+	}
+}*/

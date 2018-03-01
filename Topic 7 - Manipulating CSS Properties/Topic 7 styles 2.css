@@ -1,0 +1,13 @@
+.testingBlock {
+	width: 500px;
+	height: 200px;
+	margin: auto;
+	border: 3px solid #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+}
+
+body {
+	background-color: #14C2CC
+}

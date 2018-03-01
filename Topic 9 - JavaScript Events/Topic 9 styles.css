@@ -6,3 +6,9 @@
 	 padding-left: 10px;
 	 padding-bottom: 15px;
 }
+
+#Scroller {
+	height: 200px;
+	overflow: scroll;
+	transition: width 1.5s, height 2s;
+}

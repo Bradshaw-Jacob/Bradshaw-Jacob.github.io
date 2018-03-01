@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Topic 7 - Manipulating CSS Class Properties Using JavaScript</title>
-	<link rel="stylesheet" type="text/css" href="Topic 7 styles.css">
+	<link rel="stylesheet" type="text/css" href="Topic 7 styles.css" id="styles">
 	<script type="text/javascript" src="Topic 7 scripts.js"></script>
 </head>
 <body>
@@ -24,8 +24,8 @@
 
 	<div class="testingBlock">
 		<p>Lets change the whole style sheet</p>
-		<button type="button" onclick="">Update</button>
-		<button type="button" onclick="">Revert</button>
+		<button type="button" onclick="changeStyleSheet('Topic 7 styles.css')">Default Style</button>
+		<button type="button" onclick="changeStyleSheet('Topic 7 styles 2.css')">New Style</button>
 	</div>
 
 </body>
