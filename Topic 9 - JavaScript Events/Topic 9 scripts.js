@@ -8,16 +8,11 @@ window.addEventListener('load', function() {
 
 	touch.addEventListener('touchstart', function(e) {
 		document.getElementById('textOut').innerHTML = "You Touched me";
+		e.preventDefault();
 	}, false)
 
 }, false)
 
-
- function changeBlue() {
- 	var elem = document.getElementById('touchy');
-	elem.style.transition = "background 1.0s linear 0s";
-	elem.style.background = "#9bc8ff";
-}
 
 
 
