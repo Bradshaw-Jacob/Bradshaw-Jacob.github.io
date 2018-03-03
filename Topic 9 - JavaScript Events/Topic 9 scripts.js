@@ -13,6 +13,12 @@ window.addEventListener('load', function() {
 }, false)
 
 
+ function changeBlue() {
+ 	var elem = document.getElementById('touchy');
+	elem.style.transition = "background 1.0s linear 0s";
+	elem.style.background = "#9bc8ff";
+}
+
 
 
 
