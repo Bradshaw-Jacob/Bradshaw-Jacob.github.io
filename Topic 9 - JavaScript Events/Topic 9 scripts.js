@@ -7,7 +7,7 @@ function getTime() {
 var touch = document.getElementById('touchy');
 
 touch.addEventListener('touchstart', function(e) {
-	alert("You Touched me");
+	document.getElementById('textOut').innerHTML = "You Touched me";
 }, false)
 
 
