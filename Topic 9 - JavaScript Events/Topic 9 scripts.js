@@ -12,6 +12,12 @@ window.addEventListener('load', function() {
 		document.getElementById('textOut').innerHTML = "You Touched me";
 		touch.style.backgroundColor = colors[Math.floor((Math.random()*16)+1)];
 
+
+		var touchObj = e.changedTouches[];
+		if (touchObj.length > 6) {
+			document.getElementById('textOut').innerHTML = "I hope you are liking the colors";
+		}
+
 		e.preventDefault();
 	}, false)
 
