@@ -12,3 +12,7 @@
 	overflow: scroll;
 	transition: width 1.5s, height 2s;
 }
+
+#touchy {
+	text-align: center;
+}
