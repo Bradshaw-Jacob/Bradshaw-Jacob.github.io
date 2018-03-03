@@ -6,11 +6,11 @@ function getTime() {
 window.addEventListener('load', function() {
 	var touch = document.getElementById('touchy');
 
-	var colors = ["blue", "green", "red", "yellow", "orange", "pink", "purple", "aqua", "black", "teal", "burgundy"];
+	var colors = ["blue", "green", "red", "yellow", "orange", "pink", "purple", "aqua", "black", "teal", "burgundy", "#41f444", "#b2f441", "#f141f4", "#f4418e", "#f4d041"];
 
 	touch.addEventListener('touchstart', function(e) {
 		document.getElementById('textOut').innerHTML = "You Touched me";
-		touch.style.backgroundColor = colors[Math.floor((Math.random()*11)+1)];
+		touch.style.backgroundColor = colors[Math.floor((Math.random()*16)+1)];
 
 		e.preventDefault();
 	}, false)
