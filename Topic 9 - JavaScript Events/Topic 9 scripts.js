@@ -6,7 +6,7 @@ function getTime() {
 window.addEventListener('load', function() {
 	var touch = document.getElementById('touchy');
 
-	var colors = ["blue", "green", "red", "yellow", "orange", "pink", "purple", "aqua", "black", "teal", "burgundy"]
+	var colors = ["blue", "green", "red", "yellow", "orange", "pink", "purple", "aqua", "black", "teal", "burgundy"];
 
 	touch.addEventListener('touchstart', function(e) {
 		document.getElementById('textOut').innerHTML = "You Touched me";

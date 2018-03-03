@@ -16,6 +16,6 @@
 #touchy {
 	text-align: center;
 	height: 100px;
-	background-color: ;
+	background-color: white;
 	transition: background-color 1s;
 }
