@@ -3,13 +3,14 @@ function getTime() {
 }
 
 //onTouch functions//
+window.addEventListener('load', function() {
+	var touch = document.getElementById('touchy');
 
-var touch = document.getElementById('touchy');
+	touch.addEventListener('touchstart', function(e) {
+		document.getElementById('textOut').innerHTML = "You Touched me";
+	}, false)
 
-touch.addEventListener('touchstart', function(e) {
-	document.getElementById('textOut').innerHTML = "You Touched me";
 }, false)
-
 
 
 
