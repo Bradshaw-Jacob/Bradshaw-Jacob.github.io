@@ -14,11 +14,8 @@
 }
 
 #touchy {
-	color: #fff;
-	font-size: 30px;
-	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	height: 100px;
-	background-color: #4286f4;
+	background-color: white;
 	transition: background-color 1s;
 }
