@@ -6,3 +6,12 @@
 	 padding-left: 10px;
 	 padding-bottom: 15px;
 }
+
+.appButton {
+	position: relative;
+	padding: 10px 30px;
+	margin: 0px 10px 10px 0px;
+	font-size: 25px;
+	border-radius: 10px;
+	border-bottom: 5px solid #2980B9;
+}

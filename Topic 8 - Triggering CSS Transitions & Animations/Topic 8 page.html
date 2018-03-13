@@ -2,12 +2,35 @@
 <html>
 <head>
 	<title>Topic 8 - CSS3 Transitions and Animations and triggering them with JavaScript</title>
-	<link rel="stylesheet" type="text/css" href="All_Pages.css">
-	<script type="text/javascript" src="Topic_1_scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="Topic 8 styles.css">
+	<script type="text/javascript" src="Topic 8 scripts.js"></script>
 </head>
 <body>
 	<p><a href="../index.html">Return to Table of Contents</a></p>
 	<h1>CSS3 Transitions and Animations and triggering them with JavaScript</h1>
+
+	<h3>This topic was all about triggering animations and transitions. In the first example we look at controlling an animation. The second example addes transitions when you change the font size.</h3>
+
+	<div class="testingBlock">
+		<ul id="menu" class="menu">
+			<li><a href="../index.html">Home</a></li>
+			<li>Topics</li>
+			<li>About</li>
+		</ul>
+		<div class="buttons">
+			<p>Here we have an animation that you can pause.</p>
+			<button id="button" type="button" onclick="playPause()">Pause</button>
+		</div>
+	</div><br>
+
+	<div class="testingBlock buttons2" >
+		<p>Please the size of text you want.</p>
+		<button type="button" onclick="smallChange()">Small</button>
+		<button type="button" onclick="mediumChange()">Medium</button>
+		<button type="button" onclick="largeChange()">Large</button><br>
+
+		<p id="text">How large do you need this text?</p>
+	</div>
 
 </body>
 </html>

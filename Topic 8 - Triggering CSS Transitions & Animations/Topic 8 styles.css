@@ -1,0 +1,55 @@
+.testingBlock {
+	width: 500px;
+	height: 200px;
+	margin: auto;
+	border: 3px solid #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+}
+.buttons {
+	text-align: center;
+	margin: auto;
+	margin-top: 75px;
+	display: block;
+}
+li {
+	display: inline;
+}
+.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	background-color: #ddd;
+	float: left;
+	animation-name: moveMenu;
+	animation-duration: 6s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+
+@keyframes moveMenu {
+	0% {top: 0px; left: 0px;}
+	25% {top: 190px; left: 0px;}
+	50% {top: 190px; left: 380px;}
+	75% {top: 0px; left: 380px;}
+	100% {top: 0px; left: 0px;}
+}
+
+.buttons2 {
+	margin: auto;
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+
+#text {
+	margin-top: 10px;
+	font-size: xx-small;
+	transition: font-size 2s;
+}
+
+
