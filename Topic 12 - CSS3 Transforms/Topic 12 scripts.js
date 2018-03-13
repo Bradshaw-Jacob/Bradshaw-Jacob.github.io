@@ -23,3 +23,12 @@ function skewDiv() {
 function reset2() {
 	document.getElementById('testDiv2').removeAttribute('style');
 }
+function rotateX() {
+	document.getElementById('testDiv2').style.transform = 'rotateX(180deg)';
+}
+function rotateY() {
+	document.getElementById('testDiv2').style.transform = 'rotateY(180deg)';
+}
+function rotateZ() {
+	document.getElementById('testDiv2').style.transform = 'rotateZ(90deg)';
+}
