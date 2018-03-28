@@ -48,15 +48,57 @@ body {
 	font-size: 10vw;
 	background-color: #2980B9;
 }
-#searchBar {
-	display: block;
+#searchBarContainer {
 	height: 10vw;
+	width: 63vw;
 	margin: auto;
 	margin-top: 6vw;
 	margin-bottom: 6vw;
+	border-radius: 40px;
+	clear: both;
+}
+#searchBar {
+	position: relative;
+	float: left;
+	height: 10vw;
 	font-size: 5vw;
 	padding-left: 4vw;
-	border-radius: 40px;
+	border: solid #2980B9;
+	border-width: 3px 1.5px 3px 3px;
+	border-radius: 40px 0px 0px 40px;
+	background: transparent;
+	outline: none;
+}
+.searchButton {
+	position: absolute;
+	float: right;
+	height: 10vw;
+	width: 10vw;
+	font-size: 5vw;
+	color: red;
+	border: solid #2980B9;
+	background: #2980B9;
+	border-width: 3px 3px 3px 1.25px;
+	border-radius: 0px 40px 40px 0px;
+	cursor: pointer;
+}
+.searchButton:focus {
+	border-radius: 0px 40px 40px 0px;
+	outline: 2px solid lime;
+}
+#behind_PredictText{
+	position: absolute;
+	color: #999999;
+	height: 10vw;
+	font-size: 5vw;
+	padding-left: 4vw;
+	border-radius: 40px 0px 0px 40px;
+	outline: none;
+}
+.raise:hover,
+.raise:focus {
+	box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+	transform: translateY(-0.25em);
 }
 #collection {
 	height: 15vh;

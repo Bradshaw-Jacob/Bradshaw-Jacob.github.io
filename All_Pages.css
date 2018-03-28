@@ -15,3 +15,8 @@
 	border-radius: 10px;
 	border-bottom: 5px solid #2980B9;
 }
+.appButton:active {
+	transform: translate(0px, 5px);
+	-webkit-transform: translate(0px, 5px);
+	border-bottom: 1px solid;
+}
