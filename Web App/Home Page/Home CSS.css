@@ -39,14 +39,30 @@ body {
 #header {
 	display: block;
 	width: 100vw;
-	height: 15vh;
+	height: 25vw;
 	padding-top: 5vw;
 	padding-bottom: 5vw;
 	text-align: center;
 	margin: 0px;
 	color: #fff;
 	font-size: 10vw;
-	background-color: #2980B9;
+	background: #8AC452;
+}
+#title {
+	position: absolute;
+	top: -8vw;
+	left: 40vw;
+}
+.backButton {
+	height: 8vw;
+	float: left;
+}
+#logoImage {
+	position: absolute;
+	top: 5vw;
+	left: 13vw;
+	height: 15vw;
+	margin: auto;
 }
 #searchBarContainer {
 	height: 10vw;
@@ -63,21 +79,23 @@ body {
 	height: 10vw;
 	font-size: 5vw;
 	padding-left: 4vw;
-	border: solid #2980B9;
+	border: solid #F5921E;
 	border-width: 3px 1.5px 3px 3px;
 	border-radius: 40px 0px 0px 40px;
 	background: transparent;
 	outline: none;
 }
+
 .searchButton {
 	position: absolute;
+	padding: 0px;
 	float: right;
 	height: 10vw;
 	width: 10vw;
 	font-size: 5vw;
 	color: red;
-	border: solid #2980B9;
-	background: #2980B9;
+	border: solid #F5921E;
+	background: #F5921E;
 	border-width: 3px 3px 3px 1.25px;
 	border-radius: 0px 40px 40px 0px;
 	cursor: pointer;
@@ -86,6 +104,7 @@ body {
 	border-radius: 0px 40px 40px 0px;
 	outline: 2px solid lime;
 }
+
 #behind_PredictText{
 	position: absolute;
 	color: #999999;
@@ -100,13 +119,73 @@ body {
 	box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
 	transform: translateY(-0.25em);
 }
+
+/*Results Animation*/
+.animation {
+	position: absolute;
+	top: 800px;
+	width: 90%;
+	min-width: 322px;
+	left: 5%;
+	padding: 25px;
+	box-sizing: border-box;
+	transition: top 5s;
+	z-index: -1;
+}
+
+
+/*Loading Icon*/
+section {
+	padding: 2em 0;
+}
+.loader-icon,
+.loader-icon:before,
+.loader-icon:after {
+	width: 78px;
+	height: 78px;
+	border-radius: 50%;
+}
+.loader-icon {
+	margin: 0 auto;
+	position: relative;
+	background: transparent;
+}
+.loader-icon:before,
+.loader-icon:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: "";
+	border: 10px solid #494D4F;
+	opacity: 0.5;
+	animation: 3s rotate infinite linear;
+}
+.loader-icon:before {
+	border-left-color: transparent;
+}
+.loader-icon:after {
+	top: 18%;
+	left: 18%;
+	width: 50px;
+	height: 50px;
+	border-right-color: transparent;
+	opacity: 0.2;
+	animation-direction: reverse;
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/*Buttons*/
 #collection {
 	height: 15vh;
 	width: 42vw;
 	border-radius: 15px;
 	color: #fff;
 	font-size: 6vw;
-	background-color: green;
+	background-color: #8AC452;
 }
 #recent {
 	height: 15vh;
@@ -114,5 +193,87 @@ body {
 	border-radius: 15px;
 	color: #fff;
 	font-size: 6vw;
-	background-color: blue;
+	background-color: #8AC452;
+}
+
+.horiMoveLeft {
+	transition: 2s;
+	transform: translateX(-500px);
+}
+.horiMoveRight {
+	transition: 2s;
+	transform: translateX(500px);
+}
+
+.hide {
+	display: none;
+}
+
+#searchResults {
+	padding: 0;
+}
+.card {
+	padding: 0;
+	background: #8AC452;
+	border-radius: 20px;
+}
+.thumbNail {
+	padding: 2px;
+	border-radius: 20px;
+}
+
+/*Light Box CSS*/
+.light_Box {
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
+}
+.light_Box_Content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
+}
+
+/*Close Button*/
+.close {
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close2 {
+	float: right;
+	font-size: 35px;
+	color: #F5921E;
+	cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+#appDescript_containter {
+	margin: 10px;
+	border: solid #F5921E;
+	border-radius: 15px;
+}
+#appDescript {
+	width: 90vw;
+	margin: auto;
 }

@@ -7,18 +7,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<header id="header">Logo up here</header>
+	<header id="header">
+		<a href="../../index.html">
+			<img class="backButton" src="left_arrow_icon.png">
+		</a>
+		<img id="logoImage" src="gunsilh2.png">
+		<h4 id="title">Diagrams</h4>
+	</header>
+	<div id="appDescript_containter">
+		<span class="close2 cursor" onclick="closeAppDescript()">&times;</span>
+		<div id="appDescript">
+			<p>I went for Prove of Concept and a Minimally Viable Product. With that in mind I beleive that my app meets those. Because this is a proto-type the app is not as smooth as it coudl be but I believe that if functions nicely.</p>
+		</div>
+	</div>
+
+
 	<div id="searchBarContainer">
 		<input type="text" id="behind_PredictText"/>
 		<input type="text" id="searchBar" placeholder="Search.." autocomplete="on" onkeyup="predictSearch()"/>
-		<button type="submit" class="searchButton">
+		<!--<button type="submit" class="searchButton" onclick="call()"><img id="searchIcon" src="search_icon.png" alt="Search Button"></button>-->
+
+		<img id="searchIcon" class="searchButton" src="search_icon.png" alt="Search Button" onclick="master()">
 	</div>
-	<div class="col-6">
-		<button type="button" id="collection" class="raise">My Collection</button>
+	<section id="loaderSection" class="hide">
+		<div class="loader-icon"></div>
+	</section>
+	<div id="homeButtons">
+		<div class="col-6">
+			<button type="button" id="collection" class="raise">My Collection</button>
+		</div>
+		<div class="col-6">
+			<button type="button" id="recent" class="raise">Recent Searches</button>
+		</div>
 	</div>
-	<div class="col-6">
-		<button type="button" id="recent" class="raise">Recent Searches</button>
+	<div id="searchResults" class="col-12 animations hide">
+		<div class="col-2"></div>
+		<div class="card col-8" onclick="openLightBox()">
+			<img id="cardImage" class="col-5 thumbNail" src="" alt="gunThumbNail">
+			<div class="col-7">All Glock Models</div>
+		</div>
+		<div class="col-2"></div>
 	</div>
 
+	<div id="lightBox" class="light_Box hide">
+		<span class="close cursor" onclick="closeLightBox()">&times;</span>
+		<div class="light_Box_Content">
+			<div>
+				<img id="lightContent" src="">
+			</div>
+		</div>
+	</div>
 </body>
 </html>

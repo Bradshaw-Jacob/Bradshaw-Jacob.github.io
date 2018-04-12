@@ -20,3 +20,6 @@ function repos() {
 	document.getElementById('amount').innerHTML = amount;
 	document.getElementById('repoNames').innerHTML = names;
 }
+//https://api.github.com/users/Bradshaw-Jacob/repos
+//https://api.github.com/repos/Bradshaw-Jacob/images_descriptions/Glock Diagram.png
+//https://github.com/downloads/Bradshaw-Jacob/images_descriptions/Glock Diagram.png
