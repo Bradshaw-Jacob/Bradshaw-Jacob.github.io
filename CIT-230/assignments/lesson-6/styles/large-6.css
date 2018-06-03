@@ -1,0 +1,19 @@
+@media only screen and (min-width: 64em ) {
+
+	nav ul li a {
+		font-size: larger;
+	}
+	main {
+		max-width: 80%;
+	}
+	main figure img {
+		width: 30em;
+		display: block;
+		margin: auto;
+		float: none;
+	}
+
+	.weather-summary {
+		justify-content: center;
+	}
+}
