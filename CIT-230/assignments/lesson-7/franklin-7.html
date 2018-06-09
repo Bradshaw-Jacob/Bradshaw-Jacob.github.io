@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title>Simple Weather - Franklin</title>
+		<meta name="description" content="Simple Weather, the town of Franklin. Learn more about the beautiful town of Franklin with many of it splendid vacation spots.">
+		<meta name="author" content="Jacob Bradshaw">
+		<meta name="viewport" content="width=max-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/main-7.css">
+		<link rel="stylesheet" href="styles/medium-7.css">
+		<link rel="stylesheet" href="styles/large-7.css">
+		<script src="scripts/hamburger.js"></script>
+
+	</head>
+
+	<body>
+		<header>
+			<div class="Logo">
+				<img src="images/weather-logo.png" alt="Logo with the sun and a few clouds">
+			</div>
+			<div class="title">
+				<h1>Simple Weather</h1>
+				<p class="subheading">Making it simple</p>
+			</div>
+		</header>
+
+		<nav>
+			<button onclick="toggleMenu()">&#9776;</button>
+			<ul id="menu" class="">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Franklin</a></li>
+				<li><a href="#">Greenville</a></li>
+				<li><a href="#">Springfield</a></li>
+				<li><a href="#">Storm Center</a></li>
+				<li><a href="gallery-7.html">Gallery</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<div id="topSection">
+				<figure>
+					<img src="images/franklin-adjusted90.jpg" srcset="images/franklin-small.jpg 1x, images/franklin-medium.jpg 2x, images/franklin-large.jpg 3x" alt="picture of Franklin">
+				</figure>
+
+				<section class="weather-summary">
+					<h2>Franklin Weather Summary</h2>
+
+					<div class="current">
+						<p>Sunny</p>
+						<picture>
+							<img src="images/sunny-pic.png" alt="Sunny picture">
+						</picture>
+					</div>
+
+					<div class="highlow">
+						<p>High: <span id="highTemp">90</span>&deg;F</p>
+						<p>Low: <span id="lowTemp">66</span>&deg;F</p>
+					</div>
+
+					<div class="conditions">
+						<p>Precipitation: 10%</p>
+						<p>Wind Speed: <span id="windSpeed">5</span> MPH SW</p>
+						<p>Wind Chill: <span id="windChill"></span>&deg;F</p>
+					</div>
+				</section>
+			</div>
+			<section class="forecast">
+				<h3>Ten Day Forecast</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Day 1</th>
+							<th>Day 2</th>
+							<th>Day 3</th>
+							<th>Day 4</th>
+							<th>Day 5</th>
+							<th>Day 6</th>
+							<th>Day 7</th>
+							<th>Day 8</th>
+							<th>Day 9</th>
+							<th>Day 10</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>89&deg;F</td>
+							<td>87&deg;F</td>
+							<td>78&deg;F</td>
+							<td>75&deg;F</td>
+							<td>72&deg;F</td>
+							<td>72&deg;F</td>
+							<td>79&deg;F</td>
+							<td>83&deg;F</td>
+							<td>85&deg;F</td>
+							<td>89&deg;F</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<article>
+				<h3>Franklin Breaks Record</h3>
+				<img src="images/franklin-town75.jpg" alt="Hill Top view of Franklin">
+				<p class="town-article">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur vitae lorem dictum aliquet. Nunc porta suscipit erat non elementum. Mauris ligula dolor, luctus et nisl sed, malesuada blandit lectus. Suspendisse consectetur in ipsum mollis dignissim. Morbi consequat nulla in sapien aliquet lacinia. Sed nec lobortis lectus. Donec congue risus nec maximus suscipit. Suspendisse hendrerit consequat odio ut sagittis. Quisque id feugiat elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis gravida dolor sagittis feugiat euismod. Sed ut ante tempus nisi interdum elementum et nec ante. Morbi malesuada augue nec tellus varius, id pellentesque neque sodales.
+					Suspendisse tortor lectus, mattis ut augue sit amet, convallis hendrerit dolor. Praesent nunc nisl, sollicitudin fringilla lacinia at, ullamcorper quis augue. Praesent eu vehicula est. Curabitur molestie lorem in dolor viverra, quis dapibus diam imperdiet. Ut ut magna tempor, aliquam nisi eget, feugiat ligula. In aliquet nisi sed cursus sodales. Praesent facilisis auctor quam, eu condimentum est ultrices in.
+					Etiam mattis lorem vel dui semper molestie. Ut vitae dapibus libero, eu lacinia est. Ut blandit porttitor leo nec tristique. Donec convallis pretium quam, sed tempus ante interdum vitae. Vivamus sollicitudin consequat quam at luctus. Morbi fermentum lacus est, in feugiat lacus dapibus et. Sed nisl elit, pretium congue quam ut, cursus suscipit purus. Nullam vitae lobortis diam, a volutpat felis. Sed eu nisl a metus lacinia hendrerit in sed dolor. Nam vitae tempor tellus. Cras volutpat enim sit amet enim scelerisque convallis.
+					Praesent rutrum aliquet eros, non blandit libero gravida ut. Integer quis lacinia nibh. Pellentesque et lobortis tellus. Sed ligula risus, vestibulum vitae porta nec, posuere nec neque. Aliquam congue condimentum sapien ut egestas. Phasellus bibendum rhoncus mattis. Ut odio mauris, porta id congue nec, luctus eu nunc. Sed semper ultrices leo, id placerat massa varius sit amet. Vivamus laoreet erat molestie urna faucibus, ac ultricies augue ultricies. Nullam et massa neque. Duis viverra velit a sapien vestibulum, sed maximus nulla facilisis. Maecenas nec vestibulum metus.
+					Aliquam consequat purus vel facilisis scelerisque. Pellentesque mollis bibendum iaculis. Donec tempus vestibulum felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus sagittis turpis nec consectetur euismod. Nulla facilisi. Donec blandit ornare massa, sed sagittis lectus lacinia id.
+				</p>
+			</article>
+		</main>
+
+		<footer>
+			<section class="contact">
+				<span>Simple Weather</span><br>
+				999.999.9999<br>
+				123 Main St. Anytown, US 99999<br>
+				Google Map
+			</section>
+			<section class="footer-bar">
+				&copy;2018 | All Rights Reserved | Simple Weather | <span id="currentdate"></span>
+			</section>
+		</footer>
+
+		<script src="scripts/currentdate.js"></script>
+		<script src="scripts/windchill.js"></script>
+	</body>
+</html>
