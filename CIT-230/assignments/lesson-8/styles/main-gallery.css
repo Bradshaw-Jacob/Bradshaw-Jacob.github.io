@@ -68,41 +68,22 @@ nav ul li.active a {
 }
 nav ul li a:hover {
 	background-color: #00BF32;
+	color: #36454f;
 }
-
 main {
 	width: 95%;
 	margin: auto;
 	margin-top: 1em;
+	display: grid;
+	grid-gap: 1rem;
 }
-main #topSection {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-main h2 {
-	text-align: center;
-	margin: 0;
-}
-main div figure { 
-	margin: 0 0 .2rem 0; 
-}
-main div figure img { 
+main div img {
 	width: 100%;
-	margin: .5em 0;
 }
-main article {
-	margin: 1.2rem;
-	padding: .5rem;
-	text-align: center;
-	border: 1px solid gray;
-	overflow: auto;
+main div p {
+	margin: .5rem 0 .5rem;
+	padding-left: .75rem;
 }
-main article img {
-	width: 85%;
-	height: auto;
-}
-
 
 footer {
 	text-align: center;
@@ -119,41 +100,6 @@ footer {
 	background-color: black;
 	margin: 6px 0;
 }
-.weather-summary {
-	text-align: center;
-	font-size: large;
-}
-.highlow {
-	margin: 0;
-}
-.current {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-top: .75rem;
-}
-.current p {
-	margin: .5rem;
-	font-size: larger;
-}
-.current img {
-	width: 6em;
-	vertical-align: middle;
-}
-.forecast {
-	display: none;
-	clear: both;
-	padding-bottom: 1em;
-}
-.forecast h3 {
-	font-size: 1.75rem;
-}
-.forecast th, td {
-	padding: .5em;
-	padding-right: 1em;
-}
-
 .contact {
 	background-color: #38B2CE;
 	padding: 1.15em;

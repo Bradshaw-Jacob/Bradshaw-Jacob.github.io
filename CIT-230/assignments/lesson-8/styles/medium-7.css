@@ -1,0 +1,52 @@
+@media only screen and (min-width: 37.5em) {
+
+	nav button { 
+		display: none;
+	}
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	section.forecast { 
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+		text-align: center;
+
+	}
+	main {
+		max-width: 85%;
+	}
+	main #topSection {
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	main div figure { 
+		flex-grow: 2;
+	}
+
+	th, td {
+		border-bottom: 1px solid #000;
+	}
+
+	main article img {
+		width: 250px;
+		float: right;
+		margin: .5rem;
+		box-shadow: 3px 3px 3px #bbb;
+	}
+
+	.weather-summary {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.current p {
+		font-size: x-large;
+	}
+}
