@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Simple Weather - Storm Center</title>
+		<meta name="description" content="Report Storm sightings to help emergency personel respond.">
+		<meta name="author" content="Jacob Bradshaw">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/main-8.css">
+		<link rel="stylesheet" href="styles/medium-8.css">
+		<link rel="stylesheet" href="styles/large-8.css">
+		<link rel="stylesheet" href="styles/stormcenter-main.css">
+		<script src="scripts/hamburger.js"></script>
+		<script src="scripts/formScripts.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="Logo">
+				<img src="images/weather-logo.png" alt="Logo with the sun and a few clouds">
+			</div>
+			<div class="title">
+				<h1>Simple Weather</h1>
+				<p class="subheading">Making it simple</p>
+			</div>
+		</header>
+
+		<nav>
+			<button onclick="toggleMenu()">&#9776;</button>
+			<ul id="menu" class="">
+				<li><a href="#">Home</a></li>
+				<li><a href="franklin-8.html">Franklin</a></li>
+				<li><a href="#">Greenville</a></li>
+				<li><a href="#">Springfield</a></li>
+				<li><a href="stormcenter.html">Storm Center</a></li>
+				<li><a href="gallery-8.html">Gallery</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<form action="thankPage.html">
+				<fieldset>
+					<legend>Contact Information</legend>
+					<label class="inputs">Full Name * <input type="text" name="fullName" pattern="[A-Z a-z]{5,}" required></label>
+					<label class="inputs">Email <input type="email" name="email" placeholder="name@example.com"></label>
+					<label class="inputs">Phone * <input type="tel" name="phone" placeholder="222-555-6765" required></label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Storm Information</legend>
+					<label class="inputs">Zip Code * <input type="number" name="zip" oninput="slice(this)" pattern="[0-9]" required></label>
+					<label class="inputs">Storm Date <input type="date" name="stormDate"></label>
+					<label class="inputs">Storm Type
+						<input list="stormTypes" name="type">
+						<datalist id="stormTypes">
+							<option value="Flash Flood">
+							<option value="Hail">
+							<option value="Hurricane">
+							<option value="Thunderstorm">
+							<option value="Tornado">
+						</datalist>
+					</label>
+					<label class="inputs">Storm Severity 
+						<input type="range" id="slider" min="1" max="10" step="1" oninput="changeValue(this.value)" onchange="changeValue(this.value)">
+						<span id="sliderValue">5</span>
+					</label>
+					<label class="inputs">Storm Region
+						<select name="regions">
+							<option value="">Select Region ...</option>
+							<option value="franklin">Franklin</option>
+							<option value="greenville">Greenville</option>
+							<option value="springfield">Springfield</option>
+						</select>
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Additional Info</legend>
+					<div>User In-Danger Level </div>
+					<label class="sbs"><input type="radio" name="dangerLvl" value="yes"> Yes</label>
+					<label class="sbs"><input type="radio" name="dangerLvl" value="maybe"> Maybe</label>
+					<label class="sbs"><input type="radio" name="dangerLvl" value="no"> No</label>
+					<label class="inputs">Additional Comments <textarea name="comments"></textarea></label>
+				</fieldset>
+				<input type="submit" class="submitButton" name="reportStorm" value="Report Storm">
+			</form>
+		</main>
+
+
+
+		<footer>
+			<section class="contact">
+				<span>Simple Weather</span><br>
+				999.999.9999<br>
+				123 Main St. Anytown, US 99999<br>
+				Google Map
+			</section>
+			<section class="footer-bar">
+				&copy;2018 | All Rights Reserved | Simple Weather | <span id="currentdate"></span>
+			</section>
+		</footer>
+
+		<script src="scripts/currentdate.js"></script>
+	</body>
+</html>
