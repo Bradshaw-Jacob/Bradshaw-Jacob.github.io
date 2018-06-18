@@ -1,9 +1,11 @@
 main {
 	width: 96%;
 }
-
+form {
+	margin-top: 1.5rem;
+}
 form fieldset {
-	margin: 2rem 0;
+	margin: .75rem 0 2rem;
 	border: 2px solid #38B2CE;
 	border-radius: 10px;
 	padding: .5rem;
