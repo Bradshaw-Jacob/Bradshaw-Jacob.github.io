@@ -1,0 +1,75 @@
+main {
+	width: 96%;
+}
+form {
+	margin-top: 1.5rem;
+}
+form fieldset {
+	margin: .75rem 0 2rem;
+	border: 2px solid #38B2CE;
+	border-radius: 10px;
+	padding: .5rem;
+}
+form legend {
+	margin: 0 1rem;
+	padding: 0 .5rem;
+}
+
+form label {
+	display: block;
+	padding-top: 1rem;
+}
+form label.inputs input, form label select, form label textarea {
+	display: block;
+	border-radius: 4px;
+	padding: .75rem;
+	width: 100%;
+	max-width: 20rem;
+	background-color: #eaeaea;
+}
+form label.sbs {
+	display: block;
+	padding: .75rem 0;
+}
+form label span#rangeValue {
+	display: inline-block;
+}
+form input.submitButton {
+	background-color: #00BF32;
+	color: #fff;
+	padding: .75rem 1.5rem;
+	margin: 0 0 2rem 2%;
+	border-radius: 1rem;
+	width: 96%;
+	max-width: 20rem;
+}
+form label input:required {
+	border: red solid 1px;
+}
+form label input:required:valid {
+	border: #00BF32 solid 1px;
+}
+
+@media only screen and (min-width: 37.5em) {
+	main {
+		max-width: 75%;
+	}
+}
+
+@media only screen and (min-width: 64em) {
+	main {
+		max-width: 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+@media only screen and (min-width: 64em ) {
+
+	nav ul li a {
+		font-size: larger;
+	}
+	main {
+		max-width: 80%;
+	}
+	main #topSection {
+		flex-direction: row;
+	}
+	main div figure { 
+		margin-right: 4rem;
+		flex-grow: 0;
+	}
+	main div figure img {
+		width: 42em;
+	}
+
+	.weather-summary {
+		justify-content: center;
+	}
+}

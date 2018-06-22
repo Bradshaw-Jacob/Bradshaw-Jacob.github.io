@@ -1,0 +1,26 @@
+main {
+	margin-top: 0;
+	text-align: center;
+}
+main img { 
+	width: 100%;
+	margin: .5em 0;
+}
+@media only screen and (min-width: 37.5em) {
+	main {
+		max-width: 85%;
+	}
+}
+
+@media only screen and (min-width: 64em ) {
+	main {
+		max-width: 80%;
+		padding: 4rem;
+	}
+	main h1 {
+		padding-bottom: .5rem;
+	}
+	main img {
+		width: 35em;
+	}
+}
