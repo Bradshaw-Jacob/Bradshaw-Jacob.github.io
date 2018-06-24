@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 	<head>
 		<meta charset="utf-8">
-		<title>Simple Weather - Storm Center</title>
-		<meta name="description" content="Report Storm sightings to help emergency personel respond.">
+		<title>Simple Weather - Home</title>
+		<meta name="description" content="Simple Weather, The best place to check all things weather.">
 		<meta name="author" content="Jacob Bradshaw">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
@@ -11,8 +11,9 @@
 		<link rel="stylesheet" href="styles/main-9.css">
 		<link rel="stylesheet" href="styles/medium-9.css">
 		<link rel="stylesheet" href="styles/large-9.css">
-		<link rel="stylesheet" href="styles/thankYou-main.css">
+
 	</head>
+
 	<body>
 		<header>
 			<div class="Logo">
@@ -37,11 +38,50 @@
 		</nav>
 
 		<main>
-			<h1>Thank you for reporting the storm.</h1>
-			<img src="images/lightning-sky.jpg" alt="Image of lighting in the sky">
+			<section id="homeContent">
+				<div class="weatherStory">
+					<div class="sbs weatherStoryText">
+						<h1>Weather Story</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur vitae lorem dictum aliquet. Nunc porta suscipit erat non elementum.
+						</p>
+					</div>
+					<img src="images/franklin-adjusted90.jpg">
+				</div>
+				<div id="cityCardSection">
+					<div class="cityCards">
+						<div class="sbs cityCardsLarge">
+							<h2>Franklin</h2>
+							<div class="cityInfo">
+								<p>Town stats</p>
+								<p class="stats"></p>
+							</div>
+						</div>
+						<img src="images/franklin-adjusted90.jpg" class="item">
+					</div>
+					<div class="cityCards">
+						<div class="sbs cityCardsLarge">
+							<h2>Greenville</h2>
+							<div class="cityInfo">
+								<p>Town stats</p>
+								<p class="stats">Current Temp:</p>
+							</div>
+						</div>
+						<img src="images/franklin-adjusted90.jpg">
+					</div>
+					<div class="cityCards">
+						<div class="sbs cityCardsLarge">
+							<h2>Springfield</h2>
+							<div class="cityInfo">
+								<p>Town stats</p>
+								<p class="stats">Current Temp:</p>
+							</div>
+						</div>
+						<img src="images/franklin-adjusted90.jpg" class="item">
+					</div>
+				</div>
+			</section>	
 		</main>
-
-
 
 		<footer>
 			<section class="contact">
@@ -55,6 +95,8 @@
 			</section>
 		</footer>
 
+
+		<script src="scripts/homePageScripts.js"></script>
 		<script src="scripts/hamburger.js"></script>
 		<script src="scripts/currentdate.js"></script>
 	</body>

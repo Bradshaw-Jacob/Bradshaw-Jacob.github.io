@@ -1,0 +1,67 @@
+@media only screen and (min-width: 64em ) {
+
+	nav ul li a {
+		font-size: larger;
+	}
+	main {
+		max-width: 80%;
+	}
+	main #topSection {
+		flex-direction: row;
+	}
+	main div figure { 
+		margin-right: 4rem;
+		flex-grow: 0;
+	}
+	main div figure img {
+		width: 42em;
+	}
+
+	.weather-summary {
+		justify-content: center;
+	}
+
+	/* Home Page Styles */
+	.homeContent {
+		display: grid;
+	}
+	.weatherStory {
+		margin: 1.5rem 0 2.5rem 0;
+	}
+	.weatherStory img {
+		width: 33rem;
+		height: 15rem;
+		margin: 0;
+	}
+	.cityCards {
+		display: block;
+		width: 20rem;
+		border: 1px solid gray;
+		margin: 1rem;
+		box-shadow: 5px 5px 10px gray;
+	}
+	.sbs {
+		border: none;
+		box-shadow: none;
+	}
+	.cityCardsLarge {
+		width: 100%;
+	}
+	.weatherStoryText {
+		padding-top: 1.75rem;
+		border: 1px solid gray;
+		box-shadow: 5px 5px 10px gray;
+	}
+	.item {
+		order: 0;
+	}
+	#cityCardSection{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	/*
+	.cityCards img {
+		width: 100%;
+	}
+	*/
+}
