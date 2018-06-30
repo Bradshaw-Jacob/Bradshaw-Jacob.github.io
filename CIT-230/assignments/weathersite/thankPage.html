@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Simple Weather - Storm Center</title>
+		<meta name="description" content="Report Storm sightings to help emergency personel respond.">
+		<meta name="author" content="Jacob Bradshaw">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/medium.css">
+		<link rel="stylesheet" href="styles/large.css">
+	</head>
+	<body>
+		<header>
+			<div class="Logo">
+				<a href="index.html" ><img src="images/weather-logo.png" alt="Logo with the sun and a few clouds"></a>
+			</div>
+			<div class="title">
+				<h1>Simple Weather</h1>
+				<p class="subheading">Making it simple</p>
+			</div>
+		</header>
+
+		<nav>
+			<button onclick="toggleMenu()">&#9776;</button>
+			<ul id="menu" class="hide">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="franklin.html">Franklin</a></li>
+				<li><a href="greenville.html">Greenville</a></li>
+				<li><a href="springfield.html">Springfield</a></li>
+				<li><a href="stormcenter.html">Storm Center</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+
+		<main class="thankYou">
+			<h1>Thank you for reporting the storm.</h1>
+			<img src="images/lightning-sky.jpg" alt="Image of lighting in the sky">
+		</main>
+
+
+
+		<footer>
+			<section class="contact">
+				<span>Simple Weather</span><br>
+				999.999.9999<br>
+				123 Main St. Anytown, US 99999<br>
+				Google Map
+			</section>
+			<section class="footer-bar">
+				&copy;2018 | All Rights Reserved | Simple Weather | <span id="currentdate"></span> | Data courtesy of <a href="OpenWeatherMap.org">OpenWeatherMap.org</a>
+			</section>
+		</footer>
+
+		<script src="scripts/hamburger.js"></script>
+		<script src="scripts/currentdate.js"></script>
+	</body>
+</html>

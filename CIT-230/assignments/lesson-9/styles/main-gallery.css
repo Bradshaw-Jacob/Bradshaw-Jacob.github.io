@@ -77,10 +77,10 @@ main {
 	display: grid;
 	grid-gap: 1rem;
 }
-main div img {
+main.gallery div img {
 	width: 100%;
 }
-main div p {
+main.gallery div p {
 	margin: .5rem 0 .5rem;
 	padding-left: .75rem;
 }
@@ -110,3 +110,7 @@ footer {
 	font-size: 1rem;
 	padding: 1em;
 }
+
+
+
+
