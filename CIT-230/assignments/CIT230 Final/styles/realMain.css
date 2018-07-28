@@ -85,7 +85,7 @@ footer {
 
 /*---Main Content---*/
 #top {
-	background: linear-gradient(#3f3f3f, #FFCC68);
+	background-color: #3f3f3f;
 	display: flex;
 	flex-direction: column-reverse;
 }
@@ -165,21 +165,25 @@ form {
 	padding: 1rem 0 2rem;
 	background-color: #3f3f3f;
 }
-form div {
+.container {
+	max-width: 24rem;
+	margin: auto;
+}
+.container div {
 	margin: 1rem;
 	padding: .5rem;
 	text-align: center;
 	background-color: #FFCC68;
 }
-form div h2, h3 {
+.container div h2, h3 {
 	margin: 0;
 }
-form fieldset {
+.container fieldset {
 	margin: 1rem 1rem 0 1rem;
 	padding: 0 .75rem;
 	border: none; 
 }
-form fieldset input {
+.container fieldset input {
 	width: 100%;
 	margin-bottom: .6rem; 
 	padding:.4rem .75rem .4rem .75rem;

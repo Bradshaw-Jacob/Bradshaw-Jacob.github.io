@@ -1,0 +1,75 @@
+@media only screen and (min-width: 37.5em) {
+
+
+	/*---Header---*/
+	header {
+	display: flex;
+	justify-content: center;
+	background-color: #51861E;
+	padding: .15rem;
+	}
+	header img {
+		width: 8rem;
+		/*Logo Color: #48BB42*/
+	}
+	header div.title {
+		display: block;
+	}
+	.title {
+		text-align: center;
+	}
+	.title h1,p {
+		margin: 0;
+	}
+	.title h1 {
+		padding-top: 2rem;
+	}
+	.title p {
+		padding-top: .5rem;
+		font-size: 1.5rem;
+	}
+
+
+	/*---Navigation---*/
+	.hide {
+		display: block;
+	}
+	nav button { 
+		display: none;
+	}
+	nav #menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+
+	/*---Main Content---*/
+
+
+
+	/*---Slide Show---*/
+	#slideShow {
+		width: 28rem;
+	}
+	#slideShow .slide {
+		float: left;
+		list-style-type: none;
+		width: 28rem;
+	}
+	#slideShow ul li img {
+		width: 28rem;
+		height: 19rem;
+	}
+
+
+	#pageCards {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+
+
+
+
+}
