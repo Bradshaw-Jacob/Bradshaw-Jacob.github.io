@@ -1,0 +1,195 @@
+* { box-sizing: border-box;}
+
+body {
+	font-size: 16px;
+	font-family: 'Kalam', serif;
+}
+
+header, nav, main, footer {
+	min-width: 18.75em;
+}
+
+/*---Header---*/
+header {
+	display: flex;
+	justify-content: center;
+	background-color: #51861E;
+	padding: .15rem;
+}
+header img {
+	width: 6rem;
+	/*Logo Color: #48BB42*/
+}
+header div.title {
+	display: none;
+}
+
+/*---Navigation---*/
+nav {
+	display: flex;
+	flex-direction: column;
+	background-color: #913C0B;
+	text-align: center;
+}
+nav button {
+	border: none;
+	background-color: #88C445;
+	cursor: pointer;
+	font-size: 2rem;
+	padding-top: .5rem;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+
+}
+nav ul li a {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: .75rem;
+	text-decoration: none;
+	color: #D1D1D1;
+	font-size: 1.4rem;
+}
+nav ul li.active {
+	background-color: #FFCC68;
+}
+nav ul li.active a {
+	color: #000;
+}
+nav ul li a:hover {
+	background-color: #FFCC68;
+	color: #000;
+}
+.hide {
+	display: none;
+}
+
+/*---Footer---*/
+footer {
+	text-align: center;
+}
+.contact {
+	background-color: #88C445;
+	padding: 1.15em;
+}
+.footer-bar {
+	background-color: #3f3f3f;
+	color: #fff;
+	font-size: 1rem;
+	padding: 1em;
+}
+
+/*---Main Content---*/
+#top {
+	background: linear-gradient(#3f3f3f, #FFCC68);
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+/*---Banner---*/
+#banner {
+	background-color: #FFCC68;
+	text-align: center;
+}
+#banner h2 {
+	font-size: 1.75rem;
+}
+#banner a {
+	text-decoration: none;
+	color: #fff;
+	background-color: rgba(145,60,11,.8);
+	padding: .5rem 1rem;
+}
+
+
+/*---Slide Show---*/
+#slideShow {
+	width: 23rem;
+	overflow: hidden;
+	margin: auto;
+	margin-top: .4rem;
+}
+#slideShow ul {
+	display: block;
+	width: 6000px;
+	margin: 0;
+	padding: 0;
+}
+#slideShow .slide {
+	float: left;
+	list-style-type: none;
+	width: 23rem;
+}
+#slideShow ul li img {
+	width: 23rem;
+	height: 15.5rem;
+}
+
+/*---Page Cards---*/
+#pageCards {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: .5rem 0 1.5rem 0;
+}
+.pageCard {
+	margin: auto;
+	width: 20rem;
+	margin-top: 1.5rem;
+}
+.pageCard a {
+	text-decoration: none;
+}
+.pageCard img {
+	width: 20rem;
+	height: 12.5rem;
+}
+.textBlock {
+	width: 12rem;
+	color: white;
+	background-color: rgba(145,60,11,.8);
+	text-align: center;
+}
+.textBlock h4 {
+	margin: 0;
+	padding: .5rem .62rem;
+}
+
+/*--- Form ---*/
+form {
+	margin: .5rem 0 0;
+	padding: 1rem 0 2rem;
+	background-color: #3f3f3f;
+}
+form div {
+	margin: 1rem;
+	padding: .5rem;
+	text-align: center;
+	background-color: #FFCC68;
+}
+form div h2, h3 {
+	margin: 0;
+}
+form fieldset {
+	margin: 1rem 1rem 0 1rem;
+	padding: 0 .75rem;
+	border: none; 
+}
+form fieldset input {
+	width: 100%;
+	margin-bottom: .6rem; 
+	padding:.4rem .75rem .4rem .75rem;
+}
+.inputLabel {
+	display: none;
+}
+.submitButton {
+	background-color: #FFCC68;
+	font-size: larger;
+}
+
+

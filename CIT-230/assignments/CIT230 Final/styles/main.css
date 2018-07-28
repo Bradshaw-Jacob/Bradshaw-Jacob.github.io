@@ -1,0 +1,305 @@
+/*--------------------------------------- Main Site Styles ------------------------------------------------------------*/
+* { box-sizing: border-box;}
+
+body {
+	font-size: 16px;
+	font-family: 'Kalam', serif;
+}
+
+header, nav, main, footer {
+	min-width: 18.75em;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #39babf;
+	text-align: center;
+	padding: 10px;
+}
+header h1 {
+	margin: 0;
+	font-size: 2rem;
+	color: #fff;
+}
+header img {
+	width: 8rem;
+}
+
+header .subheading {
+	margin: 0;
+	font-style: italic;
+	font-size: 1.75rem;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	background-color: #38B2CE;
+	text-align: center;
+}
+nav button {
+	border: none;
+	background-color: #38B2CE;
+	cursor: pointer;
+	font-size: 1.6rem;
+
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+
+}
+nav ul li a {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: .75rem;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2rem;
+	border-top: 1px solid #05819E;
+}
+nav ul li.active {
+	background-color: #00BF32;
+}
+nav ul li.active a {
+	color: #000;
+}
+nav ul li a:hover {
+	background-color: #00BF32;
+	color: #000;
+}
+
+main {
+	width: 95%;
+	margin: auto;
+	margin-top: 1em;
+}
+main #topSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+main h2 {
+	text-align: center;
+	margin: 0;
+}
+main div figure { 
+	margin: 0 0 .2rem 0; 
+}
+main div figure img { 
+	width: 100%;
+	margin: .5em 0;
+	border-radius: 10px;
+}
+main article {
+	margin: 1.2rem;
+	padding: .5rem;
+	text-align: center;
+	border: 2px solid #38B2CE;
+	border-radius: 10px;
+	overflow: auto;
+}
+main article img {
+	width: 85%;
+	height: auto;
+	border-radius: 5px;
+}
+
+
+footer {
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+.menu-icon {
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+}
+.weather-summary {
+	text-align: center;
+	font-size: large;
+}
+.highlow {
+	margin: 0;
+}
+.current {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: .75rem;
+}
+.current p {
+	margin: .5rem;
+	font-size: larger;
+}
+.current img {
+	width: 6em;
+	vertical-align: middle;
+}
+.forecast {
+	display: none;
+	clear: both;
+	padding-bottom: 1em;
+}
+.forecast h3 {
+	font-size: 1.75rem;
+}
+.forecast th, td {
+	padding: 1em;
+	padding-right: 1em;
+}
+.forecast th {
+	background-color: #38B2CE;
+	color: #fff;
+}
+
+.contact {
+	background-color: #38B2CE;
+	padding: 1.15em;
+}
+.footer-bar {
+	background-color: #05819E;
+	color: #fff;
+	font-size: 1rem;
+	padding: 1em;
+}
+.footer-bar a {
+	color: #fff;
+	text-decoration: none;
+}
+.footer-bar a:hover {
+	text-decoration: underline;
+	color: #00BF32;
+}
+
+/*--------------------------------------- Home Page ------------------------------------------------------------*/
+.weatherStory {
+	text-align: center;
+}
+.weatherStory img {
+	width: 100%;
+	margin: .5em 0;
+	border-radius: 10px;
+}
+.cityCards {
+	text-align: center;
+	border: 2px solid #38B2CE;
+	margin: 1rem;
+	padding: .5rem;
+	border-radius: 10px;
+}
+.cityCards img {
+	width: 100%;
+	border-radius: 5px;
+}
+.cityInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1rem 0;
+}
+.cityInfo p {
+	margin: .25rem;
+}
+
+/*--------------------------------------- Gallery Page ------------------------------------------------------------*/
+main.gallery {
+	display: grid;
+	grid-gap: 1rem;
+}
+main.gallery div {
+	border-radius: 5px;
+}
+main.gallery div img {
+	width: 100%;
+	border-radius: 5px;
+}
+main.gallery div p {
+	margin: .5rem 0 .5rem;
+	padding-left: .75rem;
+}
+
+/*--------------------------------------- StormCenter Page ------------------------------------------------------------*/
+
+form {
+	margin-top: 1.5rem;
+}
+form fieldset {
+	margin: .75rem 0 2rem;
+	border: 2px solid #38B2CE;
+	border-radius: 10px;
+	padding: .5rem;
+}
+form legend {
+	margin: 0 1rem;
+	padding: 0 .5rem;
+}
+
+form label {
+	display: block;
+	padding-top: 1rem;
+}
+form label.inputs input, form label select, form label textarea {
+	display: block;
+	border-radius: 4px;
+	padding: .75rem;
+	width: 100%;
+	max-width: 20rem;
+	background-color: #eaeaea;
+}
+form label.sbs {
+	display: block;
+	padding: .75rem 0;
+}
+form label span#rangeValue {
+	display: inline-block;
+}
+form input.submitButton {
+	background-color: #00BF32;
+	color: #fff;
+	padding: .75rem 1.5rem;
+	margin: 0 0 2rem 2%;
+	border-radius: 1rem;
+	width: 96%;
+	max-width: 20rem;
+}
+form label input:required {
+	border: red solid 1px;
+}
+form label input:required:valid {
+	border: #00BF32 solid 1px;
+}
+
+
+/*--------------------------------------- StormCenter Page ------------------------------------------------------------*/
+
+main.thankYou {
+	margin-top: 0;
+	text-align: center;
+}
+main.thankYou img { 
+ 	width: 100%;
+ 	margin: .5em 0;
+ 	border-radius: 10px;
+ }
+
+
+
+
+
+
+
+
+
+
